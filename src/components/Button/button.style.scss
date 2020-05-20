@@ -1,0 +1,35 @@
+@mixin button-style($backgroundColor, $borderColor) {
+  background-color: $backgroundColor;
+  padding: 10px;
+  border: 0.3rem solid $borderColor;
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+  font-size: 45px;
+  border-radius: 2rem;
+  color: white;
+}
+
+@mixin button-hover($glowColor) {
+  outline: none;
+  border-color: $glowColor;
+  box-shadow: 0 0 30px $glowColor;
+  transition: box-shadow 0.1s ease-in-out;
+  color: white;
+}
+
+.play {
+  @include button-style(#d62828, black);
+}
+
+.play:hover {
+  @include button-hover(#eae2b7);
+}
+
+.create {
+  @include button-style(#f77f00, black);
+}
+
+.create:hover {
+  @include button-hover(#eae2b7);
+}
