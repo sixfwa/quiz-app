@@ -1,0 +1,78 @@
+.page {
+  margin: 0 auto;
+  margin-top: 40px;
+  text-align: center;
+  padding: 10px;
+  width: 80%;
+  border: 0.2rem solid black;
+  background-color: #f77f00;
+  border-radius: 2rem;
+
+  .container {
+    .form {
+      display: flex;
+      flex-direction: column;
+      h1 {
+        font-size: 40px;
+        color: white;
+        -webkit-text-stroke: 1px black;
+      }
+
+      input {
+        border: 0.1rem solid black;
+        height: 40px;
+        width: 60%;
+        margin: 0 auto;
+        padding-left: 30px;
+        font-size: 15px;
+        border-radius: 2rem;
+      }
+
+      input:focus {
+        outline: none;
+        border-color: #eae2b7;
+        box-shadow: 0 0 30px #eae2b7;
+        transition: box-shadow 0.1s ease-in-out;
+        transition: color 0.1s ease-in-out;
+      }
+
+      .nextButton {
+        border: 0.2rem solid black;
+        height: 70px;
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 30px;
+        background-color: #fcbf49;
+        cursor: pointer;
+        font-size: 25px;
+        border-radius: 2rem;
+      }
+
+      .nextButton:hover {
+        outline: none;
+        border-color: #eae2b7;
+        box-shadow: 0 0 30px #eae2b7;
+        transition: box-shadow 0.1s ease-in-out;
+      }
+    }
+    .homeButton {
+      margin-top: 100px;
+      border: 0.2rem solid black;
+      width: 50%;
+      background-color: #003049;
+      cursor: pointer;
+      height: 70px;
+      font-size: 25px;
+      margin-bottom: 15px;
+      border-radius: 2rem;
+      color: white;
+    }
+
+    .homeButton:hover {
+      outline: none;
+      border-color: #eae2b7;
+      box-shadow: 0 0 30px #eae2b7;
+      transition: box-shadow 0.1s ease-in-out;
+    }
+  }
+}
