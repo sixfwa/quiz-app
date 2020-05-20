@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10%;
+}
+
+@media (max-width: 700px) {
+  .container {
+    display: grid;
+    grid-gap: 1rem;
+  }
+}
