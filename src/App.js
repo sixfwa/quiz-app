@@ -24,7 +24,6 @@ function App() {
             <Route eaxct path="/createquiz/:name" component={QuizDetail} />
             <Route exact path="/playquiz" component={PlayQuiz} />
           </QuizProvider>
-          <Route path="" component={PageNotFound} />
         </Switch>
       </Router>
     </div>
