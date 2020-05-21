@@ -56,6 +56,7 @@
       }
     }
     .homeButton {
+      outline: none;
       margin-top: 100px;
       border: 0.2rem solid black;
       width: 50%;
@@ -69,7 +70,6 @@
     }
 
     .homeButton:hover {
-      outline: none;
       border-color: #eae2b7;
       box-shadow: 0 0 30px #eae2b7;
       transition: box-shadow 0.1s ease-in-out;

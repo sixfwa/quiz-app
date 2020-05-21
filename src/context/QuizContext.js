@@ -35,6 +35,10 @@ export const QuizProvider = (props) => {
         question: "What is the capital of Italy?",
         answer: "Rome",
       },
+      {
+        question: "What is the capital of Spain?",
+        answer: "Madrid",
+      },
     ],
   });
 

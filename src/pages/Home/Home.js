@@ -12,7 +12,7 @@ const Home = () => {
     <div className="container">
       {console.log(quiz)}
 
-      <Link to="/createquiz">
+      <Link to="/playquiz">
         <Button type="play">Play Quiz</Button>
       </Link>
       <Link to="/createquiz">
