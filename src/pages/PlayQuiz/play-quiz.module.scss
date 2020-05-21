@@ -1,0 +1,31 @@
+.page {
+  margin: 0 auto;
+  margin-top: 40px;
+  text-align: center;
+  padding: 10px;
+  width: 80%;
+  border: 0.2rem solid black;
+  background-color: #d62828;
+  border-radius: 2rem;
+
+  .container {
+    h1 {
+      font: 40px;
+      color: white;
+      -webkit-text-stroke: 1px black;
+    }
+
+    .number {
+      text-align: center;
+      color: white;
+    }
+
+    .score {
+      display: flex;
+      justify-content: space-around;
+      font-size: 22px;
+      font-weight: bold;
+      color: white;
+    }
+  }
+}

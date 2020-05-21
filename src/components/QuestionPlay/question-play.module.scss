@@ -1,0 +1,66 @@
+@mixin buttons {
+  outline: none;
+  border: 0.2rem solid black;
+  height: 70px;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: #f77f00;
+  cursor: pointer;
+  font-size: 25px;
+  border-radius: 2rem;
+  color: white;
+}
+
+@mixin buttons-hover {
+  border-color: #eae2b7;
+  box-shadow: 0 0 30px #eae2b7;
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 0.2rem solid black;
+  border-radius: 2rem;
+  background-color: #fcbf49;
+
+  .question {
+    font-size: 25px;
+  }
+
+  input {
+    border: 0.1rem solid black;
+    height: 40px;
+    width: 60%;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 15px;
+    border-radius: 2rem;
+    outline: none;
+    margin-bottom: 20px;
+  }
+  input:focus {
+    border-color: #eae2b7;
+    box-shadow: 0 0 30px #eae2b7;
+    transition: box-shadow 0.1s ease-in-out;
+    transition: color 0.1s ease-in-out;
+  }
+
+  .submit {
+    @include buttons();
+  }
+
+  .submit:hover {
+    @include buttons-hover();
+  }
+
+  .next {
+    @include buttons();
+  }
+
+  .next:hover {
+    @include buttons-hover();
+  }
+}
