@@ -1,9 +1,14 @@
 .question {
   margin: auto;
-  width: 90%;
+  // width: 90%;
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
-  background-color: lightcoral;
+  background-color: #fcbf49;
+  border-bottom: 0.2rem solid #855c0a;
+}
+
+.title {
+  border-right: 0.2rem solid #855c0a;
 }

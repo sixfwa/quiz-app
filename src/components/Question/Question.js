@@ -4,8 +4,8 @@ import questionStyles from "./question.module.scss";
 const Question = ({ question, answer }) => {
   return (
     <li className={questionStyles.question}>
-      <p>Question: {question}</p>
-      <p>Answer: {answer}</p>
+      <p className={questionStyles.title}>{question}</p>
+      <p className={questionStyles.answer}>{answer}</p>
     </li>
   );
 };
