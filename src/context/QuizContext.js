@@ -16,7 +16,27 @@ export const QuizContext = createContext();
 */
 
 export const QuizProvider = (props) => {
-  const [quiz, setQuiz] = useState({});
+  const [quiz, setQuiz] = useState({
+    name: "Capitals of the World",
+    questions: [
+      {
+        question: "What is the capital of England?",
+        answer: "London",
+      },
+      {
+        question: "What is the capital of France?",
+        answer: "Paris",
+      },
+      {
+        question: "What is the capital of Germany?",
+        answer: "Berlin",
+      },
+      {
+        question: "What is the capital of Italy?",
+        answer: "Rome",
+      },
+    ],
+  });
 
   return (
     <QuizContext.Provider value={[quiz, setQuiz]}>
