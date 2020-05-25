@@ -28,6 +28,9 @@ const QuizDetail = ({ match }) => {
         <h1 className="title">
           ADD QUESTIONS TO {match.params.name.toUpperCase()}
         </h1>
+        <h2 style={{ color: "white", paddingLeft: 10, paddingRight: 10 }}>
+          PRESS HOME WHEN YOU'RE FINISHED. THEN PLAY THE QUIZ
+        </h2>
 
         <form onSubmit={addQuestion} className="question-answer">
           <input
